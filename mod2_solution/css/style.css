@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkcyan;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    color: white;
+    font-size: 3em;
+}
+
+div .section {
+    width: 33.33%;
+    float: left;
+}
+
+section {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+section h2 {
+    position: absolute;
+    text-align: center;
+    font-size: 1.75em;
+    width: 120px;
+    top: 0;
+    right: 0;
+}
+
+.card1 h2 {
+    background-color: burlywood;
+}
+
+.card2 h2 {
+    background-color: brown;
+    color: white;
+}
+
+.card3 h2 {
+    background-color: chocolate;
+}
+
+section p {
+    margin-top: 22px;
+    font-size: 1.25em;
+    padding: 10px;
+    text-align: justify;
+    clear: both;
+}
+
+footer {
+    position: sticky;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    padding: 5px;
+    clear: both;
+    color: white;
+    font-size: 20px;
+}
+
+
+/******LAPTOP DEVICE*****/
+
+@media (min-width: 992px) {
+    div .section {
+        width: 33.33%;
+    }
+}
+
+
+/******TABLET DEVICE*****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div .card1,
+    div .card2 {
+        width: 50%;
+    }
+    div .card3 {
+        width: 100%;
+    }
+}
+
+
+/******MOBILE DEVICE*****/
+
+@media (max-width: 767px) {
+    div .section {
+        width: 100%;
+    }
+}
